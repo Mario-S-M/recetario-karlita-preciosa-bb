@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recetario Karly</title>
+  <meta name="description" content="Recetario Karly — recetas caseras, fáciles y con cariño." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <div class="blob blob--uno"></div>
+  <div class="blob blob--dos"></div>
+  <div class="blob blob--tres"></div>
+
+  <header class="portada contenedor">
+    <p class="portada__subtitulo">Bienvenida a</p>
+    <h1 class="portada__titulo">Recetario <span>Karly</span></h1>
+    <div class="portada__linea"></div>
+    <p class="portada__intro">
+      Un rincón dulce para guardar mis recetas favoritas: postres, panes y
+      todo lo que se hornea con cariño.
+    </p>
+
+    <nav class="indice" aria-label="Categorías del recetario">
+      <ul class="indice__lista">
+        <li><a href="#postres">Postres</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenedor">
+    <section class="seccion" id="postres">
+      <h2 class="seccion__titulo">Postres</h2>
+
+      <div class="grid-recetas">
+        <a class="tarjeta" href="recetas/001-cookies-chips.html">
+          <span class="tarjeta__numero">RECETA #001</span>
+          <img class="tarjeta__foto" src="assets/img/001-cookies-chips.png" alt="Cookies con chips de chocolate apiladas" />
+          <h3 class="tarjeta__titulo">Cookies Fáciles con Chips</h3>
+          <p class="tarjeta__descripcion">
+            Galletas suaves con chispas de chocolate, listas en menos de una hora.
+          </p>
+        </a>
+
+        <div class="tarjeta tarjeta--proxima" aria-hidden="true">
+          <span>Aquí va tu próxima receta ✨</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    Hecho con <span>&#9825;</span> para Karly.
+  </footer>
+</body>
+</html>
